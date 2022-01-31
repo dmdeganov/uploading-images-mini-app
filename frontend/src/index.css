@@ -1,0 +1,84 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&family=Teko&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Hind", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  font-family: inherit;
+}
+body {
+  margin: 0;
+  background: #4d4d4d;
+}
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* text-align: center; */
+  align-items: center;
+}
+.preview-container {
+  margin: 20px auto 0 auto;
+  width: 400px;
+  height: auto;
+  border: 1px white solid;
+}
+
+.preview-container img {
+  width: 100%;
+  display: block;
+}
+
+.preview-container p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.upload-fields {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.field {
+  margin-top: 7px;
+  text-align: center;
+  border-radius: 3px;
+  height: 2rem;
+  width: 15rem;
+  font-family: "Hind", sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+.btn.invert {
+  background-color: black;
+  color: white;
+}
+.btn:hover {
+  transform: scale(1.02);
+  background-color: black;
+  color: white;
+}
+.images-gallery {
+  margin: 30px 25px auto 25px;
+  display: grid;
+  grid-auto-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+.card {
+}
+
+.image-container img {
+  width: 20rem;
+  height: 15rem;
+  object-fit: cover;
+}
